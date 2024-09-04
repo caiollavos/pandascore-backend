@@ -1,5 +1,5 @@
 export interface ILive {
-    opens_at: number | string,
-    supported: boolean,
-    url: string;
+  opens_at: number | string;
+  supported: boolean;
+  url: string;
 }

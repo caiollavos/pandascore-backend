@@ -1,8 +1,8 @@
-import { Test, TestingModule } from '@nestjs/testing';
-import { PandaScoreService } from '../../services/panda-score/pandascore.service';
-import { HttpModule } from '@nestjs/axios';
+import { Test, TestingModule } from "@nestjs/testing";
+import { PandaScoreService } from "../../services/panda-score/pandascore.service";
+import { HttpModule } from "@nestjs/axios";
 
-describe('PandascoreService', () => {
+describe("PandascoreService", () => {
   let service: PandaScoreService;
 
   beforeEach(async () => {
@@ -14,7 +14,7 @@ describe('PandascoreService', () => {
     service = module.get<PandaScoreService>(PandaScoreService);
   });
 
-  it('should be defined', () => {
+  it("should be defined", () => {
     expect(service).toBeDefined();
   });
 });
