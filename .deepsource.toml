@@ -4,9 +4,11 @@ version = 1
 name = "javascript"
 
   [analyzers.meta]
-  plugins = ["angular"]
   environment = [
     "nodejs",
     "jest",
     "browser"
   ]
+
+[[transformers]]
+name = "prettier"
