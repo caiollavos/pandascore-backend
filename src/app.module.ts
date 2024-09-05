@@ -6,6 +6,7 @@ import { PandaScoreModule } from '@modules/panda-sacore/pandasacore.module';
 import { PlayersModule } from '@modules/players/players.module';
 import { AppService } from './app.service';
 import { MatchesModule } from '@modules/matches/matches.module';
+import { TeamsModule } from '@modules/teams/teams.module';
 
 @Module({
   imports: [
@@ -16,6 +17,7 @@ import { MatchesModule } from '@modules/matches/matches.module';
     HomeModule,
     PlayersModule,
     MatchesModule,
+    TeamsModule,
     PandaScoreModule,
   ],
   providers: [
