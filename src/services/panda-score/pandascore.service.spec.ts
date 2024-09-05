@@ -1,5 +1,5 @@
 import { Test, TestingModule } from '@nestjs/testing';
-import { PandaScoreService } from '../../services/panda-score/pandascore.service';
+import { PandaScoreService } from '@services/panda-score/pandascore.service';
 import { HttpModule } from '@nestjs/axios';
 
 describe('PandascoreService', () => {
