@@ -1,22 +1,22 @@
 import { Test, TestingModule } from '@nestjs/testing';
-import { PlayersController } from './players.controller';
+import { TeamsController } from './teams.controller';
 import { PandaScoreService } from '@services/panda-score/pandascore.service';
 
-describe('PlayersController', () => {
-  let controller: PlayersController;
+describe('TeamsController', () => {
+  let controller: TeamsController;
 
   beforeEach(async () => {
     const module: TestingModule = await Test.createTestingModule({
-      controllers: [PlayersController],
+      controllers: [TeamsController],
       providers: [
         { 
           provide: PandaScoreService,
-          useValue: { getPlayers: jest.fn() }
+          useValue: { getTeams: jest.fn() }
         }
       ]
     }).compile();
 
-    controller = module.get<PlayersController>(PlayersController);
+    controller = module.get<TeamsController>(TeamsController);
   });
 
   it('should be defined', () => {
