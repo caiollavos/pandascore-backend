@@ -8,7 +8,7 @@ export interface ITournament {
     live_supported: boolean;
     modified_at: string;
     name: string;
-    prizepool: null;
+    prizepool: string;
     serie_id: number;
     slug: string;
     tier: string;

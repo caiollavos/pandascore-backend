@@ -14,7 +14,7 @@ describe('MatchesController', () => {
 					provide: PandaScoreService,
 					useValue: {
 						getMatches: jest.fn(),
-            getUpcomingMatches: jest.fn()
+						getUpcomingMatches: jest.fn()
 					}
 				}
 			]

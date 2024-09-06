@@ -1,7 +1,6 @@
 import { Test, TestingModule } from "@nestjs/testing";
 import { PlayersController } from "./players.controller";
 import { PandaScoreService } from "@services/panda-score/pandascore.service";
-
 describe("PlayersController", () => {
   let controller: PlayersController;
 

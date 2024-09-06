@@ -5,6 +5,7 @@ import { IOpponent } from "../shared/opponent.model";
 import { IResult } from "../shared/results.model";
 import { ISerie } from "../shared/serie.model";
 import { IStream } from "../shared/stream.model";
+import { ITournament } from "../shared/tournament.model";
 import { IVideoGame, IVideoGameTitle } from "../shared/video-game.model";
 
 export interface IUpcomingMatch {
@@ -35,7 +36,7 @@ export interface IUpcomingMatch {
     slug: string;
     status: string;
     streams_list: Array<IStream>;
-    tournament: IStream;
+    tournament: ITournament;
     tournament_id: number;
     videogame: IVideoGame;
     videogame_title: IVideoGameTitle;
