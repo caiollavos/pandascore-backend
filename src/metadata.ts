@@ -60,8 +60,8 @@ export default async () => {
           import("./dto/live.dto"),
           {
             ILiveDTO: {
-              opens_at: { required: true, type: () => Object },
-              supported: { required: true, type: () => Boolean },
+              opens_at: { required: true, type: () => String },
+              supported: { required: true, type: () => String },
               url: { required: true, type: () => String },
             },
           },

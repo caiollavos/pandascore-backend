@@ -30,7 +30,7 @@ export class IGameDTO {
   id: number;
 
   @ApiProperty()
-  length: number | string;
+  length: number;
 
   @ApiProperty()
   match_id: number;
