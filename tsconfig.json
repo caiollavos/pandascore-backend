@@ -12,10 +12,12 @@
     "outDir": "./dist",
     "baseUrl": "./",
     "paths": {
+      "src/*": ["src/*"],
       "@controllers/*": ["src/controllers/*"],
       "@modules/*": ["src/modules/*"],
       "@services/*": ["src/services/*"],
-      "@strategies/*": ["src/strategies/*"]
+      "@strategies/*": ["src/strategies/*"],
+      "@models/*": ["src/models/*"]
     },
     "incremental": true,
     "skipLibCheck": true,

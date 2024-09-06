@@ -1,0 +1,46 @@
+import { IGameDTO } from "./games.dto";
+import { ILeagueDTO } from "./league.dto";
+import { ILiveDTO } from "./live.dto";
+import { IOpponentDTO } from "./opponent.dto";
+import { IResultDTO } from "./results.dto";
+import { ISerieDTO } from "./serie.dto";
+import { IStreamDTO } from "./stream.dto";
+import { ITournamentDTO } from "./tournament.dto";
+import { IVideoGameDTO, IVideoGameTitleDTO } from "./videogame.dto";
+
+export interface IUpcomingMatchDTO {
+  begin_at: string;
+  detailed_stats: true;
+  draw: boolean;
+  end_at: string;
+  forfeit: boolean;
+  game_advantage: null;
+  games: Array<IGameDTO>;
+  id: number;
+  league: ILeagueDTO;
+  league_id: number;
+  live: ILiveDTO;
+  map_picks: null;
+  match_type: string;
+  modified_at: string;
+  name: string;
+  number_of_games: number;
+  opponents: Array<IOpponentDTO>;
+  original_scheduled_at: string;
+  rescheduled: false;
+  results: Array<IResultDTO>;
+  scheduled_at: string;
+  serie: ISerieDTO;
+  serie_id: number;
+  slug: string;
+  status: string;
+  streams_list: Array<IStreamDTO>;
+  tournament: ITournamentDTO;
+  tournament_id: number;
+  videogame: IVideoGameDTO;
+  videogame_title: IVideoGameTitleDTO;
+  videogame_version: null;
+  winner: null;
+  winner_id: number;
+  winner_type: string;
+}

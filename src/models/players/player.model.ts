@@ -1,6 +1,5 @@
-import { IVideoGame } from "../shared/video-game.model";
-
-export interface IPlayer {
+import { IVideoGameDTO } from "src/dto/videogame.dto";
+export class IPlayer {
   active: boolean;
   current_team: {
     acronym: string;
@@ -10,10 +9,10 @@ export interface IPlayer {
     modified_at: string;
     name: string;
     slug: string;
-  },
-  current_videogame: IVideoGame,
+  };
+  current_videogame: IVideoGameDTO;
   first_name: string;
-  id: number,
+  id: number;
   image_url: string;
   last_name: string;
   modified_at: string;
