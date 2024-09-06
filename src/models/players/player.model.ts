@@ -1,4 +1,4 @@
-import { IVideoGameDTO } from 'src/dto/videogame.dto';
+import { IVideoGameDTO } from "src/dto/videogame.dto";
 export class IPlayer {
   active: boolean;
   current_team: {
@@ -19,5 +19,5 @@ export class IPlayer {
   name: string;
   nationality: string;
   role: string;
-  slug: string
+  slug: string;
 }

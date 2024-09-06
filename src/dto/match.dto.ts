@@ -1,4 +1,3 @@
-
 import { ApiProperty } from "@nestjs/swagger";
 import { IGameDTO, IGameWinnerDTO } from "./games.dto";
 import { ILeagueDTO } from "./league.dto";
@@ -8,105 +7,109 @@ import { IResultDTO } from "./results.dto";
 import { ISerieDTO } from "./serie.dto";
 import { IStreamDTO } from "./stream.dto";
 import { ITournamentDTO } from "./tournament.dto";
-import { IVideoGameDTO, IVideoGameTitleDTO, IVideoGameVersionDTO } from "./videogame.dto";
+import {
+  IVideoGameDTO,
+  IVideoGameTitleDTO,
+  IVideoGameVersionDTO,
+} from "./videogame.dto";
 
 export class IMatchDTO {
-	@ApiProperty()
-	match_type: string;
+  @ApiProperty()
+  match_type: string;
 
-	@ApiProperty()
-	serie_id: number;
-	
-	@ApiProperty()
-	winner_id: number;
-	
-	@ApiProperty()
-	status: string;
-	
-	@ApiProperty()
-	begin_at: string;
-	
-	@ApiProperty()
-	rescheduled: boolean;
+  @ApiProperty()
+  serie_id: number;
 
-	@ApiProperty()
-	videogame_title: IVideoGameTitleDTO;
+  @ApiProperty()
+  winner_id: number;
 
-	@ApiProperty()
-	slug: string;
+  @ApiProperty()
+  status: string;
 
-	@ApiProperty({ isArray: true, type: ILeagueDTO})
-	league: ILeagueDTO;
-	
-	@ApiProperty()
-	videogame_version: IVideoGameVersionDTO;
-	
-	@ApiProperty()
-	id: number;
-	
-	@ApiProperty()
-	serie: ISerieDTO;
-	
-	@ApiProperty()
-	name: string;
-	
-	@ApiProperty()
-	videogame: IVideoGameDTO;
-	
-	@ApiProperty()
-	detailed_stats: boolean;
+  @ApiProperty()
+  begin_at: string;
 
-	@ApiProperty()
-	modified_at: string;
+  @ApiProperty()
+  rescheduled: boolean;
 
-	@ApiProperty()
-	game_advantage: string;
+  @ApiProperty()
+  videogame_title: IVideoGameTitleDTO;
 
-	@ApiProperty()
-	number_of_games: number;
+  @ApiProperty()
+  slug: string;
 
-	@ApiProperty()
-	tournament: ITournamentDTO;
-	
-	@ApiProperty()
-	forfeit: boolean;
-	
-	@ApiProperty()
-	end_at: string;
-	
-	@ApiProperty()
-	draw: boolean;
+  @ApiProperty({ isArray: true, type: ILeagueDTO })
+  league: ILeagueDTO;
 
-	@ApiProperty({isArray: true, type: IResultDTO })
-	results: IResultDTO[];
-	
-	@ApiProperty({isArray: true, type: IGameDTO })
-	games: IGameDTO[];
+  @ApiProperty()
+  videogame_version: IVideoGameVersionDTO;
 
-	@ApiProperty()
-	live: ILiveDTO;
+  @ApiProperty()
+  id: number;
 
-	@ApiProperty({isArray: true, type: IOpponentDTO })
-	opponents: IOpponentDTO[];
+  @ApiProperty()
+  serie: ISerieDTO;
 
-	@ApiProperty()
-	scheduled_at: string;
+  @ApiProperty()
+  name: string;
 
-	@ApiProperty()
-	league_id: number;
+  @ApiProperty()
+  videogame: IVideoGameDTO;
 
-	@ApiProperty({ isArray: false, type: IGameWinnerDTO })
-	winner: IGameWinnerDTO
+  @ApiProperty()
+  detailed_stats: boolean;
 
-	@ApiProperty()
-	original_scheduled_at: string;
+  @ApiProperty()
+  modified_at: string;
 
-	@ApiProperty()
-	winner_type: string;
+  @ApiProperty()
+  game_advantage: string;
 
-	@ApiProperty({ isArray: true, type: IStreamDTO })
-	streams_list: IStreamDTO[];
+  @ApiProperty()
+  number_of_games: number;
 
-	@ApiProperty()
-	tournament_id: number;
+  @ApiProperty()
+  tournament: ITournamentDTO;
+
+  @ApiProperty()
+  forfeit: boolean;
+
+  @ApiProperty()
+  end_at: string;
+
+  @ApiProperty()
+  draw: boolean;
+
+  @ApiProperty({ isArray: true, type: IResultDTO })
+  results: IResultDTO[];
+
+  @ApiProperty({ isArray: true, type: IGameDTO })
+  games: IGameDTO[];
+
+  @ApiProperty()
+  live: ILiveDTO;
+
+  @ApiProperty({ isArray: true, type: IOpponentDTO })
+  opponents: IOpponentDTO[];
+
+  @ApiProperty()
+  scheduled_at: string;
+
+  @ApiProperty()
+  league_id: number;
+
+  @ApiProperty({ isArray: false, type: IGameWinnerDTO })
+  winner: IGameWinnerDTO;
+
+  @ApiProperty()
+  original_scheduled_at: string;
+
+  @ApiProperty()
+  winner_type: string;
+
+  @ApiProperty({ isArray: true, type: IStreamDTO })
+  streams_list: IStreamDTO[];
+
+  @ApiProperty()
+  tournament_id: number;
 }

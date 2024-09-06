@@ -1,34 +1,40 @@
 import { Controller, Get } from "@nestjs/common";
 import { PandaScoreService } from "@services/panda-score/pandascore.service";
 import { ITeam } from "src/models/teams/teams.model";
-import { ApiTags, ApiHeader, ApiOperation, ApiOkResponse, ApiResponse } from '@nestjs/swagger';
+import {
+  ApiTags,
+  ApiHeader,
+  ApiOperation,
+  ApiOkResponse,
+  ApiResponse,
+} from "@nestjs/swagger";
 
 @ApiTags("Teams")
 @ApiHeader({
-  name: 'Content-Type',
-  description: 'application/json',
+  name: "Content-Type",
+  description: "application/json",
 })
 @Controller("teams")
 export class TeamsController {
   constructor(private readonly pandaScoreService: PandaScoreService) {}
 
-  @ApiOperation({description: "Get Matches"})
+  @ApiOperation({ description: "Get Matches" })
   @Get()
-  @ApiOkResponse({ 
+  @ApiOkResponse({
     status: 200,
-    description: 'Success'
+    description: "Success",
   })
-  @ApiResponse({ 
+  @ApiResponse({
     status: 400,
-    description: 'Bad Request'
+    description: "Bad Request",
   })
-  @ApiResponse({ 
+  @ApiResponse({
     status: 404,
-    description: 'Not Found'
+    description: "Not Found",
   })
-  @ApiResponse({ 
+  @ApiResponse({
     status: 500,
-    description: 'Internal Server Error'
+    description: "Internal Server Error",
   })
   async getTeams(): Promise<Array<ITeam>> {
     return await this.pandaScoreService.getTeams();

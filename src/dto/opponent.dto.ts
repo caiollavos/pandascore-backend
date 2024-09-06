@@ -1,31 +1,31 @@
 import { ApiProperty } from "@nestjs/swagger";
 export class IOpponentItemDTO {
-    @ApiProperty()
-    acronym: string;
+  @ApiProperty()
+  acronym: string;
 
-    @ApiProperty()
-    id: number;
+  @ApiProperty()
+  id: number;
 
-    @ApiProperty()
-    image_url: string;
+  @ApiProperty()
+  image_url: string;
 
-    @ApiProperty()
-    location: string;
+  @ApiProperty()
+  location: string;
 
-    @ApiProperty()
-    modified_at: string;
+  @ApiProperty()
+  modified_at: string;
 
-    @ApiProperty()
-    name: string;
+  @ApiProperty()
+  name: string;
 
-    @ApiProperty()
-    slug: string;
+  @ApiProperty()
+  slug: string;
 }
 
 export class IOpponentDTO {
-    @ApiProperty()
-    opponent: IOpponentItemDTO;
+  @ApiProperty()
+  opponent: IOpponentItemDTO;
 
-    @ApiProperty()
-    type: string;
+  @ApiProperty()
+  type: string;
 }
