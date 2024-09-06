@@ -2,10 +2,10 @@ import { ApiProperty } from "@nestjs/swagger";
 
 export class ILiveDTO {
   @ApiProperty()
-  opens_at: number | string;
+  opens_at: string;
 
   @ApiProperty()
-  supported: boolean;
+  supported: string;
 
   @ApiProperty()
   url: string;
